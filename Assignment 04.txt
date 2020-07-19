@@ -1,0 +1,13 @@
+        Assignment-04	
+
+        select onum as"Order number",amount,odate "Order date" from orders;
+
+
+        select * from customers where snum=1001;
+
+	select city,sname,snum,comm from salespeople;
+
+	select Rating, cname "Customer Name" from customers where city='san jose';
+
+
+	select distinct snum from orders;   
