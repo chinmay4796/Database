@@ -1,0 +1,9 @@
+            Assignment:-14
+          =================
+1.  insert into salespeople(city,sname,snum) values('san jose','Blanco',1100);
+
+2.  delete from orders where cnum=(select cnum from customers where cname='clemens');
+
+3.  update customers set Rating=Rating+100 where city='rome';
+
+4.  update customers set snum=(select snum from salespeople where sname='motika')where snum=(select snum from salespeople where sname='serres');

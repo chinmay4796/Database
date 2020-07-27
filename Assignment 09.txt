@@ -1,0 +1,15 @@
+        Assignment-09
+      ==================
+
+1.     select onum,cname from orders,customers
+       where customers.cnum=orders.cnum;
+
+2.     select Sname,cname,onum from salespeople,customers,orders
+       where salespeople.snum=customers.snum and salespeople.snum=orders.snum;
+
+3.     select cname,sname,comm from customers,salespeople
+       where customers.snum=salespeople.snum
+       and comm > 0.12;
+
+4.     select amt,comm from orders,customers,salespeople
+       where salespeople.snum=customers.snum and orders.snum=salespeople.snum        and Rating > 100;

@@ -1,0 +1,11 @@
+                Assignment-08
+              =================
+   
+
+2.    select city,max(rating) from customers
+      group by city;
+
+3.    select rating,cname,cnum from customers order by rating;
+
+4.    select sum(Amt) from orders order by Amt DESC
+      group by 'odate'; 

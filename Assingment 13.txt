@@ -1,0 +1,15 @@
+                  Assignment:-13
+               ====================
+1.   select cname,city,("High Rating")rating from customers where rating>=200
+     union
+    select cname,city,("Low Rating")rating from customers where rating<200;
+
+2.  select snum number,sname from salespeople where snum in(select snum from orders group by snum having count(*)>1)
+    union
+   select cnum,cname from customers where cnum in(select cnum from orders group by cnum having count(cnum)>1)order by sname;
+
+3. select snum from salespeople where city='san jose'
+   union
+   select cnum from customers where city='san jose'
+   union all
+   select onum from orders where odate like '%10-03';
