@@ -1,0 +1,18 @@
+        Assignment:-19
+      ------------------
+1. create view v1
+   as 
+   select * from customers where rating>(select    max(rating) from customers);
+
+2. create view v2
+   as
+   select count(snum) from salespeople group by city;
+
+3. create view v3
+   as
+   select count(onum),avg(amt),sname from salespeople,orders
+   where orders.snum=salespeople.snum;
+
+4. create view v4
+   as
+   select snum from customers group by snum having count(cnum)>1;

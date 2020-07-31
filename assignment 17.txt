@@ -1,0 +1,27 @@
+Assignment 17
+--------------
+
+1. create table order2
+   (
+     onum int(10)primary key,
+     odate date not null,
+     cnum int(10),
+     snum int(10),
+     unique(cnum,snum)
+   )
+
+
+2.  create table salespeople2
+  (
+   snum int(10)primary key,
+   sname varchar(10) check(left(upper   (sname),1)between 'A' and 'M'),
+   comm float(4,2) default 0.1 not null
+  );
+
+3. create table order3
+  (
+   onum int(4) not null,
+   cnum int(5) not null,
+   snum int(10) not null,
+   check(onum>cnum and cnum>snum)
+  );
